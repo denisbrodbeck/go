@@ -798,6 +798,28 @@ function register_header_controls( \WP_Customize_Manager $wp_customize ) {
 			)
 		)
 	);
+
+	// Hide search button.
+	$wp_customize->add_setting(
+		'header_hide_search',
+		array(
+			'default'           => true,
+			'transport'         => 'postMessage',
+			'sanitize_callback' => 'absint',
+		)
+	);
+
+	// Hide search button.
+	$wp_customize->add_control(
+		'header_variation_hide_search',
+		array(
+			'label'       => esc_html__( 'Hide Search', 'go' ),
+			'description' => esc_html__( 'Hide search button in header area.', 'go' ),
+			'section'     => 'go_header_settings',
+			'settings'    => 'header_hide_search',
+			'type'        => 'checkbox',
+		)
+	);
 }
 
 /**

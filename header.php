@@ -43,7 +43,11 @@
 			<div class="header__inner flex items-center justify-between h-inherit w-full relative">
 
 				<div class="header__extras">
-					<?php Go\search_toggle(); ?>
+					<?php
+					if ( (bool) get_theme_mod( 'header_hide_search', true ) === false ) {
+						Go\search_toggle();
+					}
+					?>
 					<?php Go\WooCommerce\woocommerce_cart_link(); ?>
 				</div>
 
