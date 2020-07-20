@@ -820,6 +820,28 @@ function register_header_controls( \WP_Customize_Manager $wp_customize ) {
 			'type'        => 'checkbox',
 		)
 	);
+
+	// Fixed header control.
+	$wp_customize->add_setting(
+		'header_fixed_header',
+		array(
+			'default'           => false,
+			'transport'         => 'postMessage',
+			'sanitize_callback' => 'absint',
+		)
+	);
+
+	// Fixed header control.
+	$wp_customize->add_control(
+		'header_variation_hide_search',
+		array(
+			'label'       => esc_html__( 'Fixed Header', 'go' ),
+			'description' => esc_html__( 'Header will stick to the top of the display when scrolling.', 'go' ),
+			'section'     => 'go_header_settings',
+			'settings'    => 'header_fixed_header',
+			'type'        => 'checkbox',
+		)
+	);
 }
 
 /**
