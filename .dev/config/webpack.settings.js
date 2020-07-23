@@ -21,6 +21,8 @@ module.exports = {
 		'design-styles/style-welcoming-editor': './.dev/assets/design-styles/welcoming/css/style-welcoming-editor.css',
 		'design-styles/style-playful': './.dev/assets/design-styles/playful/css/style-playful.css',
 		'design-styles/style-playful-editor': './.dev/assets/design-styles/playful/css/style-playful-editor.css',
+		'design-styles/style-marketing': './.dev/assets/design-styles/marketing/css/style-marketing.css',
+		'design-styles/style-marketing-editor': './.dev/assets/design-styles/marketing/css/style-marketing-editor.css',
 
 		// Admin JS.
 		'admin/customize-controls': './.dev/assets/admin/js/customize-controls.js',
@@ -46,7 +48,9 @@ module.exports = {
 			welcomingBase: '/.dev/assets/design-styles/welcoming/',
 			welcomingCss: './.dev/assets/design-styles/welcoming/css/',
 			playfulBase: './.dev/assets/design-styles/playful/',
-			playfulCss: './.dev/assets/design-styles/playful/css/'
+			playfulCss: './.dev/assets/design-styles/playful/css/',
+			marketingBase: './.dev/assets/design-styles/marketing/',
+			marketingCss: './.dev/assets/design-styles/marketing/css/'
 		},
 		dist: {
 			base: './dist/',

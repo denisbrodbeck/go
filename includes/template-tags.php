@@ -12,6 +12,7 @@ namespace Go;
 
 use function Go\Core\get_available_color_schemes;
 use function Go\AMP\is_amp;
+use function Go\Core\is_marketing_design_style;
 
 /**
  * Return the Post Meta.
@@ -544,6 +545,7 @@ function copyright( $args = array() ) {
 	 */
 	$year      = (string) apply_filters( 'go_footer_copyrght_year_text', sprintf( '&copy; %s&nbsp;', esc_html( gmdate( 'Y' ) ) ) );
 	$copyright = get_theme_mod( 'copyright', \Go\Core\get_default_copyright() );
+	$isMarketing = is_marketing_design_style();
 
 	?>
 
@@ -562,7 +564,7 @@ function copyright( $args = array() ) {
 		<?php } ?>
 
 		<?php
-		if ( function_exists( 'the_privacy_policy_link' ) ) {
+		if ( function_exists( 'the_privacy_policy_link' ) && $isMarketing === false ) {
 			the_privacy_policy_link( '' );
 		}
 		?>

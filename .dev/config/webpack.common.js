@@ -85,6 +85,7 @@ module.exports = {
 					path.resolve( process.cwd(), settings.paths.src.trendyCss ),
 					path.resolve( process.cwd(), settings.paths.src.welcomingCss ),
 					path.resolve( process.cwd(), settings.paths.src.playfulCss ),
+					path.resolve( process.cwd(), settings.paths.src.marketingCss ),
 					path.resolve( process.cwd(), settings.paths.src.adminCss ),
 				],
 				use: [

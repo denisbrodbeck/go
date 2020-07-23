@@ -849,6 +849,7 @@ class Test_Core extends WP_UnitTestCase {
 			'trendy',
 			'welcoming',
 			'playful',
+			'marketing',
 		];
 
 		$this->assertEquals( $expected_styles, array_keys( Go\Core\get_available_design_styles() ) );

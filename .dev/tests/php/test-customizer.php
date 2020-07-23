@@ -424,6 +424,7 @@ class Test_Customizer extends WP_UnitTestCase {
 			'playful-two',
 			'playful-three',
 			'playful-four',
+			'marketing-one',
 		];
 
 		$this->assertEquals( $expected_color_scheme_keys, array_keys( Go\Customizer\get_color_schemes_as_choices() ) );

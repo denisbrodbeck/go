@@ -912,6 +912,34 @@ function get_available_design_styles() {
 			),
 			'viewport_basis' => '950',
 		),
+		'marketing'     => array(
+			'slug'           => 'marketing',
+			'label'          => _x( 'Marketing', 'design style name', 'go' ),
+			'url'            => get_theme_file_uri( "dist/css/design-styles/style-marketing{$rtl}{$suffix}.css" ),
+			'editor_style'   => "dist/css/design-styles/style-marketing-editor{$rtl}{$suffix}.css",
+			'color_schemes'  => array(
+				'one'   => array(
+					'label'             => _x( 'Frolic', 'color palette name', 'go' ),
+					'primary'           => '#3f46ae',
+					'secondary'         => '#ecb43d',
+					'tertiary'          => '#f7fbff',
+					'background'        => '#ffffff',
+					'header_background' => '#3f46ae',
+					'header_text'       => '#fafafa',
+					'footer_background' => '#3f46ae',
+				),
+			),
+			'fonts'          => array(
+				'IBM Plex Serif' => array(
+					'400',
+					'600',
+				),
+				'IBM Plex Sans'   => array(
+					'600',
+				),
+			),
+			'viewport_basis' => '950',
+		),
 	);
 
 	/**
@@ -946,6 +974,17 @@ function get_design_style() {
 	}
 
 	return false;
+
+}
+
+/**
+ * Returns true if the current design style is marketing.
+ *
+ * @return bool
+ */
+function is_marketing_design_style() {
+
+	return get_design_style()['slug'] === 'marketing';
 
 }
 
