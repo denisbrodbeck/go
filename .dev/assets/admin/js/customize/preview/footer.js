@@ -101,6 +101,16 @@ export default () => {
 		} );
 	} );
 
+	wp.customize( 'social_icon_xing', ( value ) => {
+		value.bind( ( to ) => {
+			if ( to ) {
+				$( '.social-icon-xing' ).removeClass( 'display-none' );
+			} else {
+				$( '.social-icon-xing' ).addClass( 'display-none' );
+			}
+		} );
+	} );
+
 	wp.customize( 'social_icon_pinterest', ( value ) => {
 		value.bind( ( to ) => {
 			if ( to ) {

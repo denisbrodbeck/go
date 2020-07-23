@@ -1080,6 +1080,7 @@ class Test_Core extends WP_UnitTestCase {
 			'twitter',
 			'instagram',
 			'linkedin',
+			'xing',
 			'pinterest',
 			'youtube',
 			'github',

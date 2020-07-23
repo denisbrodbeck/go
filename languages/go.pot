@@ -8,7 +8,7 @@ msgstr ""
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"POT-Creation-Date: 2020-07-01T15:46:21+00:00\n"
+"POT-Creation-Date: 2020-07-23T15:24:04+02:00\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "X-Generator: WP-CLI 2.4.0\n"
 "X-Domain: go\n"
@@ -116,7 +116,7 @@ msgstr ""
 msgid "Skip to content"
 msgstr ""
 
-#: header.php:56
+#: header.php:60
 msgid "Horizontal"
 msgstr ""
 
@@ -793,27 +793,31 @@ msgid "LinkedIn"
 msgstr ""
 
 #: includes/core.php:1140
-msgid "Pinterest"
+msgid "Xing"
 msgstr ""
 
 #: includes/core.php:1145
-msgid "YouTube"
+msgid "Pinterest"
 msgstr ""
 
 #: includes/core.php:1150
+msgid "YouTube"
+msgstr ""
+
+#: includes/core.php:1155
 msgid "GitHub"
 msgstr ""
 
-#: includes/core.php:1302
+#: includes/core.php:1307
 msgid "That page can't be found"
 msgstr ""
 
 #. translators: Search query term(s).
-#: includes/core.php:1320
+#: includes/core.php:1325
 msgid "Search for: %s"
 msgstr ""
 
-#: includes/core.php:1328
+#: includes/core.php:1333
 msgid "Nothing Found"
 msgstr ""
 
@@ -877,14 +881,14 @@ msgstr ""
 #: includes/customizer.php:560
 #: includes/customizer.php:622
 #: includes/customizer.php:782
-#: includes/customizer.php:849
+#: includes/customizer.php:893
 msgid "Background"
 msgstr ""
 
 #: includes/customizer.php:580
 #: includes/customizer.php:642
 #: includes/customizer.php:795
-#: includes/customizer.php:862
+#: includes/customizer.php:906
 msgid "Foreground"
 msgstr ""
 
@@ -897,7 +901,7 @@ msgid "Customize colors within the site footer."
 msgstr ""
 
 #: includes/customizer.php:662
-#: includes/customizer.php:875
+#: includes/customizer.php:919
 msgid "Heading"
 msgstr ""
 
@@ -926,28 +930,44 @@ msgstr ""
 msgid "Choose a header for every page on your site, then style it with the selectors below."
 msgstr ""
 
-#: includes/customizer.php:815
-#: includes/customizer.php:834
+#: includes/customizer.php:816
+msgid "Hide Search"
+msgstr ""
+
+#: includes/customizer.php:817
+msgid "Hide search button in header area."
+msgstr ""
+
+#: includes/customizer.php:838
+msgid "Fixed Header"
+msgstr ""
+
+#: includes/customizer.php:839
+msgid "Header will stick to the top of the display when scrolling."
+msgstr ""
+
+#: includes/customizer.php:859
+#: includes/customizer.php:878
 msgid "Footer"
 msgstr ""
 
-#: includes/customizer.php:835
+#: includes/customizer.php:879
 msgid "Choose a footer for every page on your site, then style it with the selectors below."
 msgstr ""
 
-#: includes/customizer.php:895
+#: includes/customizer.php:939
 msgid "Social"
 msgstr ""
 
-#: includes/customizer.php:896
+#: includes/customizer.php:940
 msgid "Add social media account links to apply social icons on the site footer."
 msgstr ""
 
-#: includes/customizer.php:932
+#: includes/customizer.php:976
 msgid "Social icon"
 msgstr ""
 
-#: includes/customizer.php:949
+#: includes/customizer.php:993
 msgid "Site Design"
 msgstr ""
 

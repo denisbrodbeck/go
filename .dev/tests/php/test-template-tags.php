@@ -1253,6 +1253,19 @@ class Test_Template_Tags extends WP_UnitTestCase {
 	}
 
 	/**
+	 * Test the post_meta() returns proper data xing icon data
+	 */
+	public function test_social_icons_xing() {
+
+		set_theme_mod( 'social_icon_xing', 'https://www.xing.com/custom' );
+
+		$this->expectOutputRegex( '/<a class="social-icons__icon" href="https:\/\/www.xing.com\/custom" aria-label="Xing" rel="noopener noreferrer">/' );
+
+		Go\social_icons( [] );
+
+	}
+
+	/**
 	 * Test the post_meta() returns proper data pinterest icon data
 	 */
 	public function test_social_icons_pinterest() {

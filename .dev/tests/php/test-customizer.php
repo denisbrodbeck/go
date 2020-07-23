@@ -952,6 +952,7 @@ class Test_Customizer extends WP_UnitTestCase {
 			'twitter',
 			'instagram',
 			'linkedin',
+			'xing',
 			'pinterest',
 			'youtube',
 			'github',
