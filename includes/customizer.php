@@ -833,7 +833,7 @@ function register_header_controls( \WP_Customize_Manager $wp_customize ) {
 
 	// Fixed header control.
 	$wp_customize->add_control(
-		'header_variation_hide_search',
+		'header_variation_fixed_header',
 		array(
 			'label'       => esc_html__( 'Fixed Header', 'go' ),
 			'description' => esc_html__( 'Header will stick to the top of the display when scrolling.', 'go' ),
