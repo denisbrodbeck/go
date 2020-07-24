@@ -15,8 +15,8 @@
 	--go--font-family: "IBM Plex Serif", sans-serif;
 	--go--font-size--small: 80%;
 	--go--font-size--smallest: 80%;
-	--go--font-size: 1.1rem;
-	--go--line-height: 1.8;
+	--go--font-size: 1.2rem;
+	--go--line-height: 1.7;
 
 	/* Headings */
 	--go-heading--button-spacing: 2rem;
@@ -85,7 +85,7 @@
 
 	/* Site Navigation */
 	--go-navigation--color--text: var(--go--color--white);
-	--go-navigation--font-family: var(--go--font-family);
+	--go-navigation--font-family: var(--go-heading--font-family);
 	--go-navigation--font-size: 1.1rem;
 	--go-navigation--font-weight: 600;
 	--go-navigation-mobile--font-size: 1.4rem;

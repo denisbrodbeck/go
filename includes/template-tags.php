@@ -806,15 +806,29 @@ function site_branding( $args = array() ) {
 		$blog_description = get_bloginfo( 'description' );
 
 		if ( ! empty( $blog_name ) ) {
-			echo '<a class="display-inline-block no-underline" href="' . esc_url( home_url( '/' ) ) . '" itemprop="url">';
-			printf(
-				'<%1$s class="site-title">' . esc_html( $blog_name ) . '</%1$s>',
-				( is_front_page() && ! did_action( 'get_footer' ) ) ? 'h1' : 'span'
-			);
-			echo '</a>';
+			if (is_marketing_design_style()) {
+				echo '<a class="header--logo no-underline" href="' . esc_url( home_url( '/' ) ) . '" itemprop="url" rel="home" aria-label="Zurück zur Startseite">';
+				echo '<svg class="twc-logo-first tw-h-8 lg:tw-h-12" aria-hidden="true" focusable="false" viewBox="0 0 200 50" xmlns="http://www.w3.org/2000/svg" fill-rule="evenodd" clip-rule="evenodd" stroke-linejoin="round" stroke-miterlimit="2">
+				<path class="fa-secondary" fill="currentColor" d="M0 0h200v50H0z"/>
+				<path class="fa-primary" fill="currentColor" fill-rule="nonzero" d="M36.41 40.81h5.84V9.91h-5.84v12.66H23.53V9.91h-5.85v30.9h5.85V27.75H36.4v13.06zM56.46 6.77c2.3 0 3.15-1.1 3.15-2.57v-.93c0-1.46-.85-2.61-3.15-2.61s-3.14 1.15-3.14 2.61v.93c0 1.46.84 2.57 3.14 2.57zm9.3 0c2.3 0 3.14-1.1 3.14-2.57v-.93c0-1.46-.84-2.61-3.14-2.61-2.3 0-3.14 1.15-3.14 2.61v.93c0 1.46.84 2.57 3.14 2.57zM49.29 9.9v18.24c0 9.07 3.14 13.2 11.82 13.2s11.9-4.13 11.9-13.2V9.9h-5.75v19c0 4.82-1.68 7.25-6.1 7.25-4.43 0-6.11-2.43-6.11-7.26V9.91h-5.76zM100.9 15.09V9.91H77.54v5.18h8.77v25.72h5.84V15.09h8.77zM127.33 15.09V9.91h-23.37v5.18h8.77v25.72h5.84V15.09h8.76zM152.48 40.81v-5.18h-14.52v-7.88h12.84v-5.18h-12.84V15.1h14.52V9.91h-20.36v30.9h20.36zM164.52 28.9h5.53l5.76 11.91h6.5l-6.33-12.57c3.81-1.29 5.76-4.52 5.76-8.77 0-5.84-3.5-9.56-9.12-9.56h-13.94v30.9h5.84v-11.9zm0-4.91V15h7.52c2.26 0 3.63 1.2 3.63 3.45v2.04c0 2.26-1.37 3.5-3.63 3.5h-7.52z"/>
+			  </svg>
+			  <svg class="twc-logo-second tw-h-8 lg:tw-h-12" aria-hidden="true" focusable="false" viewBox="0 0 200 50" xmlns="http://www.w3.org/2000/svg" fill-rule="evenodd" clip-rule="evenodd" stroke-linejoin="round" stroke-miterlimit="2">
+				<path class="fa-secondary" fill="currentColor" d="M0 0h200v50H0z"/>
+				<path class="fa-primary" fill="currentColor" d="M17.68 35.32h2.79V18.64h.14l1.69 3.4 4.73 8.67 4.74-8.67 1.68-3.4h.15v16.68h2.78V14.68H32.9l-5.74 10.85h-.12L21.3 14.68h-3.6v20.64zM57.6 35.32l-7.14-20.64h-3.6l-7.17 20.64h2.9l1.99-5.82h8.04l1.95 5.82h3.02zm-5.69-8.37h-6.65l3.25-9.64h.15l3.25 9.64zM63.78 26.75h4.52l4.3 8.57h3.22l-4.59-8.87c2.66-.68 4.05-2.72 4.05-5.71 0-3.79-2.22-6.06-5.85-6.06H60.9v20.64h2.87v-8.57zm0-2.49v-7.04h5.53c1.83 0 2.93 1 2.93 2.78v1.48c0 1.77-1.1 2.78-2.93 2.78h-5.53zM92.38 35.32h3.52l-8.1-11.86 7.54-8.78h-3.43l-5.95 7.1-2.93 3.66h-.11V14.68h-2.87v20.64h2.87v-6.68l2.87-3.26 6.6 9.94zM112.03 35.32v-2.54h-10v-6.63h9.26v-2.54h-9.26v-6.39h10v-2.54H99.16v20.64h12.87zM120.96 35.32h2.87v-18.1h6.39v-2.54h-15.65v2.54h6.39v18.1zM141.05 35.32V32.9h-2.87V17.1h2.87v-2.42h-8.61v2.42h2.87v15.8h-2.87v2.42h8.6zM157.9 35.32h3.2V14.68h-2.78v16.47h-.09l-2.84-5.17-6.77-11.3h-3.2v20.64h2.79V18.85h.08l2.84 5.17 6.78 11.3zM179.74 35.32h2.57v-10.8h-7.18v2.5h4.4v1.86c0 2.84-2.27 4.23-5.03 4.23-3.7 0-6-2.49-6-6.45V23.3c0-3.96 2.34-6.42 5.83-6.42a5.42 5.42 0 015.23 3.4l2.37-1.38a8.04 8.04 0 00-7.6-4.59c-5.36 0-8.9 3.82-8.9 10.71 0 6.92 3.54 10.65 8.54 10.65 3.14 0 5.2-1.48 5.65-3.43h.12v3.07z"/>
+			  </svg>';
+				echo '</a>';
+			} else {
+				echo '<a class="display-inline-block no-underline" href="' . esc_url( home_url( '/' ) ) . '" itemprop="url" rel="home" aria-label="Zurück zur Startseite">';
+				printf(
+					'<%1$s class="site-title">' . esc_html( $blog_name ) . '</%1$s>',
+					( is_front_page() && ! did_action( 'get_footer' ) ) ? 'h1' : 'span'
+				);
+				echo '</a>';
+			}
+
 		}
 
-		if ( true === $args['description'] && ! empty( $blog_description ) ) :
+		if ( true === $args['description'] && ! empty( $blog_description ) && !is_marketing_design_style()) :
 			echo '<span class="site-description display-none sm:display-block relative text-sm">' . esc_html( $blog_description ) . '</span>';
 		endif;
 	}

@@ -8,7 +8,7 @@ msgstr ""
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"POT-Creation-Date: 2020-07-23T17:46:56+02:00\n"
+"POT-Creation-Date: 2020-07-24T05:51:02+02:00\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "X-Generator: WP-CLI 2.4.0\n"
 "X-Domain: go\n"
@@ -742,88 +742,88 @@ msgctxt "design style name"
 msgid "Marketing"
 msgstr ""
 
-#: includes/core.php:1005
+#: includes/core.php:1016
 msgctxt "name of the first header variation option"
 msgid "Header 1"
 msgstr ""
 
-#: includes/core.php:1009
+#: includes/core.php:1020
 msgctxt "name of the second header variation option"
 msgid "Header 2"
 msgstr ""
 
-#: includes/core.php:1013
+#: includes/core.php:1024
 msgctxt "name of the third header variation option"
 msgid "Header 3"
 msgstr ""
 
-#: includes/core.php:1017
+#: includes/core.php:1028
 msgctxt "name of the fourth header variation option"
 msgid "Header 4"
 msgstr ""
 
-#: includes/core.php:1044
+#: includes/core.php:1055
 msgctxt "name of the first footer variation option"
 msgid "Footer 1"
 msgstr ""
 
-#: includes/core.php:1051
+#: includes/core.php:1062
 msgctxt "name of the second footer variation option"
 msgid "Footer 2"
 msgstr ""
 
-#: includes/core.php:1058
+#: includes/core.php:1069
 msgctxt "name of the third footer variation option"
 msgid "Footer 3"
 msgstr ""
 
-#: includes/core.php:1065
+#: includes/core.php:1076
 msgctxt "name of the fourth footer variation option"
 msgid "Footer 4"
 msgstr ""
 
-#: includes/core.php:1148
+#: includes/core.php:1159
 msgid "Facebook"
 msgstr ""
 
-#: includes/core.php:1153
+#: includes/core.php:1164
 msgid "Twitter"
 msgstr ""
 
-#: includes/core.php:1158
+#: includes/core.php:1169
 msgid "Instagram"
 msgstr ""
 
-#: includes/core.php:1163
+#: includes/core.php:1174
 msgid "LinkedIn"
 msgstr ""
 
-#: includes/core.php:1168
+#: includes/core.php:1179
 msgid "Xing"
 msgstr ""
 
-#: includes/core.php:1173
+#: includes/core.php:1184
 msgid "Pinterest"
 msgstr ""
 
-#: includes/core.php:1178
+#: includes/core.php:1189
 msgid "YouTube"
 msgstr ""
 
-#: includes/core.php:1183
+#: includes/core.php:1194
 msgid "GitHub"
 msgstr ""
 
-#: includes/core.php:1335
+#: includes/core.php:1346
 msgid "That page can't be found"
 msgstr ""
 
 #. translators: Search query term(s).
-#: includes/core.php:1353
+#: includes/core.php:1364
 msgid "Search for: %s"
 msgstr ""
 
-#: includes/core.php:1361
+#: includes/core.php:1372
 msgid "Nothing Found"
 msgstr ""
 
@@ -986,7 +986,7 @@ msgid "(Edit)"
 msgstr ""
 
 #: includes/pluggable.php:44
-#: includes/template-tags.php:114
+#: includes/template-tags.php:115
 msgid "Post author"
 msgstr ""
 
@@ -1008,36 +1008,36 @@ msgid "Reply"
 msgstr ""
 
 #. Translators: %s = the author name.
-#: includes/template-tags.php:120
+#: includes/template-tags.php:121
 msgctxt "%s = author name"
 msgid "By %s"
 msgstr ""
 
-#: includes/template-tags.php:136
+#: includes/template-tags.php:137
 msgid "Post date"
 msgstr ""
 
-#: includes/template-tags.php:171
+#: includes/template-tags.php:172
 msgid "Categories"
 msgstr ""
 
-#: includes/template-tags.php:175
+#: includes/template-tags.php:176
 msgid "In"
 msgstr ""
 
-#: includes/template-tags.php:189
+#: includes/template-tags.php:190
 msgid "Tags"
 msgstr ""
 
-#: includes/template-tags.php:227
+#: includes/template-tags.php:228
 msgid "Featured"
 msgstr ""
 
-#: includes/template-tags.php:859
+#: includes/template-tags.php:875
 msgid "Menu"
 msgstr ""
 
-#: includes/template-tags.php:892
+#: includes/template-tags.php:908
 msgid "Search Toggle"
 msgstr ""
 

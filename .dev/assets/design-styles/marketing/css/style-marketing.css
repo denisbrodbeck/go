@@ -34,3 +34,137 @@
 		}
 	}
 }
+
+@media (--medium) {
+
+	.header__inner {
+		padding-bottom: 1rem;
+		padding-top: 1rem;
+	}
+
+}
+
+.header--logo {
+	display: flex;
+	flex-direction: row;
+	text-decoration: none;
+}
+
+.header--logo:hover {
+	text-decoration: none;
+}
+
+.header-fixed {
+	box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+	position: fixed;
+	width: 100%;
+}
+
+.has-header-fixed .entry-content > :first-child {
+	margin-top: calc(var(--go--spacing--vertical--lg) * 0.5 + 5rem);
+}
+
+.has-header-fixed .entry-header {
+	padding-top: calc(var(--go--spacing--vertical--lg) * 0.55 + 5rem);
+}
+
+.header {
+	background-color: var(--go--color--white);
+	color: var(--go--color--primary);
+}
+
+.twc-main-nav-inverted {
+	background-color: var(--go--color--primary);
+	color: var(--go--color--white);
+}
+
+.header__navigation a {
+	color: var(--go-heading--color--text);
+}
+
+.twc-main-nav-inverted .header__navigation a {
+	color: var(--go-navigation--color--text);
+}
+
+.twc-main-nav-inverted .twc-logo {
+	color: var(--go--color--white);
+}
+
+/* style the svg logos */
+.twc-logo-first,
+.twc-logo-second {
+	height: 2rem;
+}
+
+@media (--large) {
+
+	.twc-logo-first,
+	.twc-logo-second {
+		height: 3rem;
+	}
+
+}
+
+.twc-logo-second {
+	transition-duration: 500ms;
+	transition-property: all;
+	transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.twc-logo-first .fa-primary {
+	color: var(--go-heading--color--text);
+	transition-duration: 500ms;
+	transition-property: background-color, border-color, color, fill, stroke;
+	transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.twc-logo-first .fa-secondary {
+	color: transparent;
+}
+
+.twc-main-nav-inverted .twc-logo-first .fa-primary {
+	color: var(--go--color--white);
+}
+
+.twc-main-nav-inverted .twc-logo-first .fa-secondary {
+	color: transparent;
+}
+
+.twc-logo-second .fa-primary {
+	color: var(--go--color--white);
+}
+
+.twc-logo-second .fa-secondary {
+	color: var(--go-heading--color--text);
+}
+
+@media (--medium) {
+
+	.twc-logo-second {
+		transform: translateY(4rem) translateX(-12rem);
+	}
+
+	.twc-main-nav-inverted .twc-logo-second {
+		transform: translateY(0) translateX(0);
+	}
+
+}
+
+.header-fixed .header__navigation a {
+	display: block;
+	position: relative;
+	text-decoration: none;
+}
+
+.header-fixed .header__navigation a[aria-current="page"]::before,
+.header-fixed .header__navigation a[data-state="active"]::before {
+	background: var(--go-heading--color--text);
+	content: "";
+	display: block;
+	height: 0.25rem;
+	left: 0;
+	margin-top: 0.25rem;
+	position: absolute;
+	top: 100%;
+	width: 100%;
+}
