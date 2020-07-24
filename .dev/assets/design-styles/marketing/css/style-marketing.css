@@ -164,3 +164,9 @@
 .wp-block-button:not(.is-style-outline) .wp-block-button__link:hover {
 	filter: brightness(96%);
 }
+
+/* I once saw i Userlike tracking pixel which
+   broke the site layout at the bottom of the page. */
+.userlike-tracking-img {
+	display: none;
+}
