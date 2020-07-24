@@ -1,7 +1,7 @@
 # Copyright (c) 2019 GoDaddy Operating Company, LLC. All Rights Reserved.
 msgid ""
 msgstr ""
-"Project-Id-Version: Go 1.3.2\n"
+"Project-Id-Version: Go 1.3.3\n"
 "Report-Msgid-Bugs-To: https://github.com/godaddy-wordpress/go/issues\n"
 "Last-Translator: plugins@godaddy.com\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
