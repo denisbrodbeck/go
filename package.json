@@ -2,11 +2,11 @@
   "name": "go",
   "version": "1.3.3",
   "description": "Go is an innovative, Gutenberg-first WordPress theme, hyper-focused on empowering makers to build beautifully rich websites with WordPress.",
-  "homepage": "https://github.com/godaddy-wordpress/go",
+  "homepage": "https://github.com/brodbeck/go",
   "repository": {
     "type": "git",
-    "url": "https://github.com/godaddy-wordpress/go",
-    "base": "godaddy-wordpress/go"
+    "url": "https://github.com/brodbeck/go",
+    "base": "brodbeck/go"
   },
   "author": {
     "name": "GoDaddy",

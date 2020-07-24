@@ -3,6 +3,11 @@
   "type": "wordpress-theme",
   "authors": [
     {
+      "name": "Denis Brodbeck",
+      "homepage": "https://www.starkfels-media.de",
+      "role": "Developer"
+    },
+    {
       "name": "GoDaddy",
       "homepage": "http://www.godaddy.com",
       "role": "Developer"
