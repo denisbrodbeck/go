@@ -36,12 +36,12 @@
 
 	<div id="page" class="site">
 
-		<a class="skip-link screen-reader-text" href="#site-content"><?php esc_html_e( 'Skip to content', 'go' ); ?></a>
+		<a class="skip-link screen-reader-text wp-block-button__link has-background has-secondary-background-color" href="#site-content"><?php esc_html_e( 'Skip to content', 'go' ); ?></a>
 
 		<header id="site-header" class="site-header header relative <?php echo esc_attr( Go\has_header_background() ); ?> <?php echo esc_attr( Go\Core\is_marketing_design_style() ? 'header-fixed twc-main-nav-inverted' : '' ); ?>" role="banner" itemscope itemtype="http://schema.org/WPHeader">
 
 			<div class="header__inner flex items-center justify-between h-inherit w-full relative">
-
+			<?php if ( !Go\Core\is_marketing_design_style() ) : ?>
 				<div class="header__extras">
 					<?php
 					if ( (bool) get_theme_mod( 'header_hide_search', true ) === false ) {
@@ -50,6 +50,7 @@
 					?>
 					<?php Go\WooCommerce\woocommerce_cart_link(); ?>
 				</div>
+			<?php endif; ?>
 
 				<div class="header__title-nav flex items-center flex-nowrap">
 

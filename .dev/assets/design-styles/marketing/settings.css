@@ -1,5 +1,7 @@
 :root {
 
+	/* Use Palette 2 from Refactoring UI book */
+
 	/* Content width */
 	--go--max-width: 42rem;
 	--go--max-width--alignwide: 84rem;
@@ -11,7 +13,7 @@
 	--go--spacing--paragraph: 9;
 
 	/* Typography */
-	--go--color--text: hsl(230, 9%, 39%);
+	--go--color--text: hsl(211, 39%, 23%);
 	--go--font-family: "IBM Plex Serif", sans-serif;
 	--go--font-size--small: 80%;
 	--go--font-size--smallest: 80%;
@@ -20,7 +22,7 @@
 
 	/* Headings */
 	--go-heading--button-spacing: 2rem;
-	--go-heading--color--text: hsl(229, 18%, 24%);
+	--go-heading--color--text: hsl(209, 61%, 16%);
 	--go-heading--font-family: "IBM Plex Sans", sans-serif;
 	--go-heading--font-weight: 600;
 	--go-heading--line-height: 1.35;
@@ -28,8 +30,8 @@
 	--go--type-ratio: 1.215;
 
 	/* Captions */
-	--go-caption--color--text: hsl(0, 0%, 52%);
-	--go-caption--font-size: 0.85rem;
+	--go-caption--color--text: hsl(211, 39%, 33%);
+	--go-caption--font-size: 0.9rem;
 	--go-caption--text-align: center;
 
 	/* Pullquote */
@@ -43,7 +45,7 @@
 	--go-selection--color--background: var(--go--color--primary);
 
 	/* Buttons */
-	--go-button--border-radius: 5px;
+	--go-button--border-radius: 3px;
 	--go-button--border-width: 1px;
 	--go-button--font-weight: 600;
 	--go-button--padding--x: 1.85rem;
@@ -56,7 +58,7 @@
 	--go-label--margin-bottom: 0.35rem;
 
 	/* Input */
-	--go-input--border-radius: 5px;
+	--go-input--border-radius: 3px;
 	--go-input--border: var(--go-input--border-width, 2px) var(--go-input--border-style, solid) var(--go-input--border-color, var(--go-heading--color--text));
 	--go-input--color--text: var(--go-heading--color--text);
 	--go-input--font-size: 1.1rem;
@@ -67,7 +69,7 @@
 	--go-input-interactive--color--text: var(--go--color--primary);
 
 	/* Header */
-	--go-header--color--background: "";
+	--go-header--color--background: var(--go--color--white);
 
 	/* Site Title */
 	--go-site-title--color--text: var(--go--color--white);
@@ -84,7 +86,7 @@
 	--go-site-description--color--text: var(--go--color--white);
 
 	/* Site Navigation */
-	--go-navigation--color--text: var(--go--color--white);
+	--go-navigation--color--text: var(--go-heading--color--text);
 	--go-navigation--font-family: var(--go-heading--font-family);
 	--go-navigation--font-size: 1.1rem;
 	--go-navigation--font-weight: 600;
@@ -99,10 +101,11 @@
 
 	/* Footer */
 	--go-footer--color--text: var(--go--color--white);
+	--go-footer--font-family: var(--go-heading--font-family);
 	--go-footer-heading--color--text: var(--go--color--white);
 	--go-footer-navigation--color--text: var(--go--color--white);
 	--go-footer-3--border-color: var(--go-header--color--background, var(--go--color--background, 0, 0, 100%));
-	--go-footer-3--border-width: 10px;
+	--go-footer-3--border-width: 1px;
 
 	/* Social */
 	--go-social--color--text: var(--go--color--white);

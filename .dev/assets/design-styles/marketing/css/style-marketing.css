@@ -60,37 +60,22 @@
 	width: 100%;
 }
 
-.has-header-fixed .entry-content > :first-child {
-	margin-top: calc(var(--go--spacing--vertical--lg) * 0.5 + 5rem);
+.header-fixed a:focus {
+	outline-color: var(--go--color--secondary);
+	outline-width: 3px;
 }
 
-.has-header-fixed .entry-header {
-	padding-top: calc(var(--go--spacing--vertical--lg) * 0.55 + 5rem);
-}
-
-.header {
-	background-color: var(--go--color--white);
-	color: var(--go--color--primary);
+.has-header-fixed {
+	padding-top: 5rem;
 }
 
 .twc-main-nav-inverted {
-	background-color: var(--go--color--primary);
-	color: var(--go--color--white);
+	--go-navigation--color--text: var(--go--color--white);
+	--go-search-toggle--color--text: var(--go--color--white);
+	--go-header--color--background: var(--go--color--primary);
+	--go-navigation--color--logo-secondary: var(--go-heading--color--text);
 }
 
-.header__navigation a {
-	color: var(--go-heading--color--text);
-}
-
-.twc-main-nav-inverted .header__navigation a {
-	color: var(--go-navigation--color--text);
-}
-
-.twc-main-nav-inverted .twc-logo {
-	color: var(--go--color--white);
-}
-
-/* style the svg logos */
 .twc-logo-first,
 .twc-logo-second {
 	height: 2rem;
@@ -105,14 +90,8 @@
 
 }
 
-.twc-logo-second {
-	transition-duration: 500ms;
-	transition-property: all;
-	transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-}
-
 .twc-logo-first .fa-primary {
-	color: var(--go-heading--color--text);
+	color: var(--go-navigation--color--text);
 	transition-duration: 500ms;
 	transition-property: background-color, border-color, color, fill, stroke;
 	transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
@@ -120,14 +99,16 @@
 
 .twc-logo-first .fa-secondary {
 	color: transparent;
+	transition-duration: 500ms;
+	transition-property: background-color, border-color, color, fill, stroke;
+	transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.twc-main-nav-inverted .twc-logo-first .fa-primary {
-	color: var(--go--color--white);
-}
-
-.twc-main-nav-inverted .twc-logo-first .fa-secondary {
-	color: transparent;
+.twc-logo-second {
+	box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+	transition-duration: 500ms;
+	transition-property: all;
+	transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .twc-logo-second .fa-primary {
@@ -135,7 +116,7 @@
 }
 
 .twc-logo-second .fa-secondary {
-	color: var(--go-heading--color--text);
+	color: var(--go-navigation--color--logo-secondary, var(--go-navigation--color--text));
 }
 
 @media (--medium) {
@@ -157,8 +138,8 @@
 }
 
 .header-fixed .header__navigation a[aria-current="page"]::before,
-.header-fixed .header__navigation a[data-state="active"]::before {
-	background: var(--go-heading--color--text);
+.header-fixed .header__navigation a:hover::before {
+	background: var(--go-navigation--color--text);
 	content: "";
 	display: block;
 	height: 0.25rem;
@@ -167,4 +148,18 @@
 	position: absolute;
 	top: 100%;
 	width: 100%;
+}
+
+#header__navigation[aria-hidden="false"] a::before {
+	width: auto;
+}
+
+.site-footer .twc-logo-first .fa-primary {
+	color: var(--go--color--white);
+	color: var(--go-heading--color--logo-first-primary);
+}
+
+.wp-block-button:not(.is-style-outline) .wp-block-button__link:focus,
+.wp-block-button:not(.is-style-outline) .wp-block-button__link:hover {
+	filter: brightness(96%);
 }
