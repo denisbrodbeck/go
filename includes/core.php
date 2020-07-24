@@ -225,40 +225,316 @@ function theme_setup() {
 				'color' => '#ffffff',
 			),
 		);
+		if (is_marketing_design_style()) {
+			$color_palette = array(
+				array(
+					'name'  => esc_html_x( 'Primary', 'name of the first color palette selection', 'go' ),
+					'slug'  => 'primary',
+					'color' => \Go\get_palette_color( 'primary' ),
+				),
+				array(
+					'name'  => esc_html_x( 'Secondary', 'name of the second color palette selection', 'go' ),
+					'slug'  => 'secondary',
+					'color' => \Go\get_palette_color( 'secondary' ),
+				),
+				array(
+					'name'  => esc_html_x( 'Tertiary', 'name of the third color palette selection', 'go' ),
+					'slug'  => 'tertiary',
+					'color' => \Go\get_palette_color( 'tertiary' ),
+				),
+				array(
+					'name'  => esc_html_x( 'Quaternary', 'name of the fourth color palette selection', 'go' ),
+					'slug'  => 'quaternary',
+					'color' => '#ffffff',
+				),
+				array(
+					'name'   => esc_html_x( 'Blue-100', '', 'go' ),
+					'slug'   => 'blue-100',
+					'color'  => '#dceefb',
+				),
+				array(
+					'name'   => esc_html_x( 'Blue-200', '', 'go' ),
+					'slug'   => 'blue-200',
+					'color'  => '#b6e0fe',
+				),
+				array(
+					'name'   => esc_html_x( 'Blue-300', '', 'go' ),
+					'slug'   => 'blue-300',
+					'color'  => '#84c5f4',
+				),
+				array(
+					'name'   => esc_html_x( 'Blue-400', '', 'go' ),
+					'slug'   => 'blue-400',
+					'color'  => '#62b0e8',
+				),
+				array(
+					'name'   => esc_html_x( 'Blue-500', '', 'go' ),
+					'slug'   => 'blue-500',
+					'color'  => '#4098d7',
+				),
+				array(
+					'name'   => esc_html_x( 'Blue-600', '', 'go' ),
+					'slug'   => 'blue-600',
+					'color'  => '#2680c2',
+				),
+				array(
+					'name'   => esc_html_x( 'Blue-700', '', 'go' ),
+					'slug'   => 'blue-700',
+					'color'  => '#186faf',
+				),
+				array(
+					'name'   => esc_html_x( 'Blue-800', '', 'go' ),
+					'slug'   => 'blue-800',
+					'color'  => '#0f609b',
+				),
+				array(
+					'name'   => esc_html_x( 'Blue-900', '', 'go' ),
+					'slug'   => 'blue-900',
+					'color'  => '#0a558c',
+				),
+				array(
+					'name'   => esc_html_x( 'Blue-1000', '', 'go' ),
+					'slug'   => 'blue-1000',
+					'color'  => '#003e6b',
+				),
+				array(
+					'name'   => esc_html_x( 'Yellow-100', '', 'go' ),
+					'slug'   => 'yellow-100',
+					'color'  => '#fffbea',
+				),
+				array(
+					'name'   => esc_html_x( 'Yellow-200', '', 'go' ),
+					'slug'   => 'yellow-200',
+					'color'  => '#fff3c4',
+				),
+				array(
+					'name'   => esc_html_x( 'Yellow-300', '', 'go' ),
+					'slug'   => 'yellow-300',
+					'color'  => '#fce588',
+				),
+				array(
+					'name'   => esc_html_x( 'Yellow-400', '', 'go' ),
+					'slug'   => 'yellow-400',
+					'color'  => '#fadb5f',
+				),
+				array(
+					'name'   => esc_html_x( 'Yellow-500', '', 'go' ),
+					'slug'   => 'yellow-500',
+					'color'  => '#f7c948',
+				),
+				array(
+					'name'   => esc_html_x( 'Yellow-600', '', 'go' ),
+					'slug'   => 'yellow-600',
+					'color'  => '#f0b429',
+				),
+				array(
+					'name'   => esc_html_x( 'Yellow-700', '', 'go' ),
+					'slug'   => 'yellow-700',
+					'color'  => '#de911d',
+				),
+				array(
+					'name'   => esc_html_x( 'Yellow-800', '', 'go' ),
+					'slug'   => 'yellow-800',
+					'color'  => '#cb6e17',
+				),
+				array(
+					'name'   => esc_html_x( 'Yellow-900', '', 'go' ),
+					'slug'   => 'yellow-900',
+					'color'  => '#b44d12',
+				),
+				array(
+					'name'   => esc_html_x( 'Yellow-1000', '', 'go' ),
+					'slug'   => 'yellow-1000',
+					'color'  => '#8d2b0b',
+				),
+				array(
+					'name'   => esc_html_x( 'Gray-100', '', 'go' ),
+					'slug'   => 'gray-100',
+					'color'  => '#f0f4f8',
+				),
+				array(
+					'name'   => esc_html_x( 'Gray-200', '', 'go' ),
+					'slug'   => 'gray-200',
+					'color'  => '#d9e2ec',
+				),
+				array(
+					'name'   => esc_html_x( 'Gray-300', '', 'go' ),
+					'slug'   => 'gray-300',
+					'color'  => '#bcccdc',
+				),
+				array(
+					'name'   => esc_html_x( 'Gray-400', '', 'go' ),
+					'slug'   => 'gray-400',
+					'color'  => '#9fb3c8',
+				),
+				array(
+					'name'   => esc_html_x( 'Gray-500', '', 'go' ),
+					'slug'   => 'gray-500',
+					'color'  => '#829ab1',
+				),
+				array(
+					'name'   => esc_html_x( 'Gray-600', '', 'go' ),
+					'slug'   => 'gray-600',
+					'color'  => '#627d98',
+				),
+				array(
+					'name'   => esc_html_x( 'Gray-700', '', 'go' ),
+					'slug'   => 'gray-700',
+					'color'  => '#486581',
+				),
+				array(
+					'name'   => esc_html_x( 'Gray-800', '', 'go' ),
+					'slug'   => 'gray-800',
+					'color'  => '#334e68',
+				),
+				array(
+					'name'   => esc_html_x( 'Gray-900', '', 'go' ),
+					'slug'   => 'gray-900',
+					'color'  => '#243b53',
+				),
+				array(
+					'name'   => esc_html_x( 'Gray-1000', '', 'go' ),
+					'slug'   => 'gray-1000',
+					'color'  => '#102a43',
+				),
+				array(
+					'name'   => esc_html_x( 'Cyan-100', '', 'go' ),
+					'slug'   => 'cyan-100',
+					'color'  => '#e0fcff',
+				),
+				array(
+					'name'   => esc_html_x( 'Cyan-200', '', 'go' ),
+					'slug'   => 'cyan-200',
+					'color'  => '#bef8fd',
+				),
+				array(
+					'name'   => esc_html_x( 'Cyan-300', '', 'go' ),
+					'slug'   => 'cyan-300',
+					'color'  => '#87eaf2',
+				),
+				array(
+					'name'   => esc_html_x( 'Cyan-400', '', 'go' ),
+					'slug'   => 'cyan-400',
+					'color'  => '#54d1db',
+				),
+				array(
+					'name'   => esc_html_x( 'Cyan-500', '', 'go' ),
+					'slug'   => 'cyan-500',
+					'color'  => '#38bec9',
+				),
+				array(
+					'name'   => esc_html_x( 'Cyan-600', '', 'go' ),
+					'slug'   => 'cyan-600',
+					'color'  => '#2cb1bc',
+				),
+				array(
+					'name'   => esc_html_x( 'Cyan-700', '', 'go' ),
+					'slug'   => 'cyan-700',
+					'color'  => '#14919b',
+				),
+				array(
+					'name'   => esc_html_x( 'Cyan-800', '', 'go' ),
+					'slug'   => 'cyan-800',
+					'color'  => '#0e7c86',
+				),
+				array(
+					'name'   => esc_html_x( 'Cyan-900', '', 'go' ),
+					'slug'   => 'cyan-900',
+					'color'  => '#0a6c74',
+				),
+				array(
+					'name'   => esc_html_x( 'Cyan-1000', '', 'go' ),
+					'slug'   => 'cyan-1000',
+					'color'  => '#044e54',
+				),
+				array(
+					'name'   => esc_html_x( 'Red-100', '', 'go' ),
+					'slug'   => 'red-100',
+					'color'  => '#ffeeee',
+				),
+				array(
+					'name'   => esc_html_x( 'Red-200', '', 'go' ),
+					'slug'   => 'red-200',
+					'color'  => '#facdcd',
+				),
+				array(
+					'name'   => esc_html_x( 'Red-300', '', 'go' ),
+					'slug'   => 'red-300',
+					'color'  => '#f29b9b',
+				),
+				array(
+					'name'   => esc_html_x( 'Red-400', '', 'go' ),
+					'slug'   => 'red-400',
+					'color'  => '#e66a6a',
+				),
+				array(
+					'name'   => esc_html_x( 'Red-500', '', 'go' ),
+					'slug'   => 'red-500',
+					'color'  => '#d64545',
+				),
+				array(
+					'name'   => esc_html_x( 'Red-600', '', 'go' ),
+					'slug'   => 'red-600',
+					'color'  => '#ba2525',
+				),
+				array(
+					'name'   => esc_html_x( 'Red-700', '', 'go' ),
+					'slug'   => 'red-700',
+					'color'  => '#a61b1b',
+				),
+				array(
+					'name'   => esc_html_x( 'Red-800', '', 'go' ),
+					'slug'   => 'red-800',
+					'color'  => '#911111',
+				),
+				array(
+					'name'   => esc_html_x( 'Red-900', '', 'go' ),
+					'slug'   => 'red-900',
+					'color'  => '#780a0a',
+				),
+				array(
+					'name'   => esc_html_x( 'Red-1000', '', 'go' ),
+					'slug'   => 'red-1000',
+					'color'  => '#610404',
+				),
+			);
+		}
 
 		add_theme_support( 'editor-color-palette', $color_palette );
 
-		$primary_color    = \Go\get_palette_color( 'primary', 'RGB' );
-		$secondary_color  = \Go\get_palette_color( 'secondary', 'RGB' );
-		$tertiary_color   = \Go\get_palette_color( 'tertiary', 'RGB' );
-		$background_color = \Go\get_palette_color( 'background', 'RGB' );
+		if (!is_marketing_design_style()) {
 
-		add_theme_support(
-			'editor-gradient-presets',
-			array(
-				array(
-					'name'     => __( 'Primary to Secondary', 'go' ),
-					'gradient' => 'linear-gradient(135deg, ' . esc_attr( $primary_color ) . ' 0%, ' . esc_attr( $secondary_color ) . ' 100%)',
-					'slug'     => 'primary-to-secondary',
-				),
-				array(
-					'name'     => __( 'Primary to Tertiary', 'go' ),
-					'gradient' => 'linear-gradient(135deg, ' . esc_attr( $primary_color ) . ' 0%, ' . esc_attr( $tertiary_color ) . ' 100%)',
-					'slug'     => 'primary-to-tertiary',
-				),
-				array(
-					'name'     => __( 'Primary to Background', 'go' ),
-					'gradient' => 'linear-gradient(135deg, ' . esc_attr( $primary_color ) . ' 0%, ' . esc_attr( $background_color ) . ' 100%)',
-					'slug'     => 'primary-to-background',
-				),
-				array(
-					'name'     => __( 'Secondary to Tertiary', 'go' ),
-					'gradient' => 'linear-gradient(135deg, ' . esc_attr( $secondary_color ) . ' 0%, ' . esc_attr( $background_color ) . ' 100%)',
-					'slug'     => 'secondary-to-tertiary',
-				),
-			)
-		);
+			$primary_color    = \Go\get_palette_color( 'primary', 'RGB' );
+			$secondary_color  = \Go\get_palette_color( 'secondary', 'RGB' );
+			$tertiary_color   = \Go\get_palette_color( 'tertiary', 'RGB' );
+			$background_color = \Go\get_palette_color( 'background', 'RGB' );
 
+			add_theme_support(
+				'editor-gradient-presets',
+				array(
+					array(
+						'name'     => __( 'Primary to Secondary', 'go' ),
+						'gradient' => 'linear-gradient(135deg, ' . esc_attr( $primary_color ) . ' 0%, ' . esc_attr( $secondary_color ) . ' 100%)',
+						'slug'     => 'primary-to-secondary',
+					),
+					array(
+						'name'     => __( 'Primary to Tertiary', 'go' ),
+						'gradient' => 'linear-gradient(135deg, ' . esc_attr( $primary_color ) . ' 0%, ' . esc_attr( $tertiary_color ) . ' 100%)',
+						'slug'     => 'primary-to-tertiary',
+					),
+					array(
+						'name'     => __( 'Primary to Background', 'go' ),
+						'gradient' => 'linear-gradient(135deg, ' . esc_attr( $primary_color ) . ' 0%, ' . esc_attr( $background_color ) . ' 100%)',
+						'slug'     => 'primary-to-background',
+					),
+					array(
+						'name'     => __( 'Secondary to Tertiary', 'go' ),
+						'gradient' => 'linear-gradient(135deg, ' . esc_attr( $secondary_color ) . ' 0%, ' . esc_attr( $background_color ) . ' 100%)',
+						'slug'     => 'secondary-to-tertiary',
+					),
+				)
+			);
+		}
 	}
 
 }

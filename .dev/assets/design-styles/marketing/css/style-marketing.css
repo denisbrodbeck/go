@@ -4,6 +4,7 @@
 @import url("../../../shared/css/config/media-queries.css");
 @import url("../settings.css");
 @import url("components/carousel.css");
+@import url("components/colors.css");
 
 .wp-block-separator:not(.is-style-dots) {
 	background-color: var(--go--color--secondary);
