@@ -1,0 +1,39 @@
+/* frontpage intro slash */
+.frontpage-intro--slash {
+	display: none;
+}
+
+@media (--large) {
+
+	.frontpage-intro--slash {
+		display: block;
+		color: var(--go--color--white);
+		--transform-translate-x: -50%;
+		--transform-translate-y: 0;
+		--transform-rotate: 0;
+		--transform-skew-x: 0;
+		--transform-skew-y: 0;
+		--transform-scale-x: 1;
+		--transform-scale-y: 1;
+		transform: translateX(var(--transform-translate-x)) translateY(var(--transform-translate-y)) rotate(var(--transform-rotate)) skewX(var(--transform-skew-x)) skewY(var(--transform-skew-y)) scaleX(var(--transform-scale-x)) scaleY(var(--transform-scale-y));
+		position: absolute;
+		left: 0;
+		top: 0;
+		bottom: 0;
+		height: 100%;
+		width: 12rem;
+	}
+
+}
+
+.frontpage-intro > .wp-block-media-text__content {
+	position: relative;
+	height: 100%;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+}
+
+.frontpage-intro > .wp-block-media-text__content > .wp-block-buttons {
+	margin-top: 1rem;
+}

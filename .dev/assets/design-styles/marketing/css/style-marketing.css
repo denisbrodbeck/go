@@ -5,6 +5,8 @@
 @import url("../settings.css");
 @import url("components/carousel.css");
 @import url("components/colors.css");
+@import url("components/frontpage.css");
+@import url("components/override.css");
 
 .wp-block-separator:not(.is-style-dots) {
 	background-color: var(--go--color--secondary);
@@ -67,7 +69,15 @@
 }
 
 .has-header-fixed {
-	padding-top: 5rem;
+	padding-top: 3.9rem;
+}
+
+@media (--medium) {
+
+	.has-header-fixed {
+		padding-top: 5rem;
+	}
+
 }
 
 .twc-main-nav-inverted {
@@ -120,7 +130,7 @@
 	color: var(--go-navigation--color--logo-secondary, var(--go-navigation--color--text));
 }
 
-@media (--medium) {
+@media (--large) {
 
 	.twc-logo-second {
 		transform: translateY(4rem) translateX(-12rem);
