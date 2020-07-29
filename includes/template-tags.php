@@ -664,7 +664,7 @@ function page_title() {
 	}
 
 	printf(
-		'<header class="page-header entry-header m-auto px %1$s">%2$s</header>',
+		'<header class="page-header entry-header m-auto px fit-this-text %1$s">%2$s</header>',
 		is_customize_preview() ? ( get_theme_mod( 'page_titles', true ) ? '' : 'display-none' ) : '',
 		wp_kses(
 			$html,
