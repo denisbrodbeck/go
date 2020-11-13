@@ -58,7 +58,9 @@
 }
 
 .header-fixed {
-	box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+	box-shadow:
+		0 4px 6px -1px rgba(0, 0, 0, 0.1),
+		0 2px 4px -1px rgba(0, 0, 0, 0.06);
 	position: fixed;
 	width: 100%;
 }
@@ -85,59 +87,35 @@
 	--go-search-toggle--color--text: var(--go--color--white);
 	--go-header--color--background: var(--go--color--primary);
 	--go-navigation--color--logo-secondary: var(--go-heading--color--text);
+	--go--color--logo-icon--inverted: var(--go--color--primary);
+	--go--color--logo-icon-bg--inverted: #fff;
 }
 
-.twc-logo-first,
-.twc-logo-second {
+.twc-logo {
 	height: 2rem;
 }
 
 @media (--large) {
 
-	.twc-logo-first,
-	.twc-logo-second {
+	.twc-logo {
 		height: 3rem;
 	}
 
 }
 
-.twc-logo-first .fa-primary {
-	color: var(--go-navigation--color--text);
-	transition-duration: 500ms;
-	transition-property: background-color, border-color, color, fill, stroke;
-	transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+.twc-logo-icon {
+	color: var(--go--color--logo-icon--inverted, #fff);
+	stroke: var(--go--color--logo-icon-bg--inverted, var(--go--color--primary));
+	stroke-dasharray: 950;
+	stroke-dashoffset: 950;
+	animation: draw-logo 3s ease-in-out forwards;
 }
 
-.twc-logo-first .fa-secondary {
-	color: transparent;
-	transition-duration: 500ms;
-	transition-property: background-color, border-color, color, fill, stroke;
-	transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-}
+@keyframes draw-logo {
 
-.twc-logo-second {
-	box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
-	transition-duration: 500ms;
-	transition-property: all;
-	transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.twc-logo-second .fa-primary {
-	color: var(--go--color--white);
-}
-
-.twc-logo-second .fa-secondary {
-	color: var(--go-navigation--color--logo-secondary, var(--go-navigation--color--text));
-}
-
-@media (--large) {
-
-	.twc-logo-second {
-		transform: translateY(4rem) translateX(-12rem);
-	}
-
-	.twc-main-nav-inverted .twc-logo-second {
-		transform: translateY(0) translateX(0);
+	to {
+		color: var(--go--color--logo-icon-bg--inverted, var(--go--color--primary));
+		stroke-dashoffset: 0;
 	}
 
 }
